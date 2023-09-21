@@ -12,7 +12,7 @@ public class UserServicePublisher {
 
     public static void main(String[] args) {
         Endpoint endpoint = Endpoint.create(new UserServiceImpl());
-        endpoint.publish("http://localhost:8087/ws/user");
+        endpoint.publish("http://localhost:8080/ws/user");
 
         LOGGER.log(Level.INFO, "Service is ready for requests...");
     }
